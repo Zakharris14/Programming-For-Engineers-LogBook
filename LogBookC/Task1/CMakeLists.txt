@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
-project(Task1)
+project(Task1 C)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_C_STANDARD 11)
 
-add_executable(Task1 main.cpp)
+add_executable(Task1 main.c)
