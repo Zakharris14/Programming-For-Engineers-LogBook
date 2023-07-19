@@ -18,7 +18,7 @@ int main() {
     printf("Please enter their\nAge:\nFirst Name:\nLast Name:\nHeight:\nPosition:\nGames Played:\nGoals Scored:\nSeperated By Spaces.\n");
     scanf("%d %c %c %f %c %f %f",playerList[pChoice].age,playerList[pChoice].firstName,playerList[pChoice].lastName,playerList[pChoice].height,playerList[pChoice].position,playerList[pChoice].played,playerList[pChoice].scored);
 
-    printf("%\n%\n%\n%\n%\n%\n%\n%")
+    printf("\n%d\n%c\n%c\n%f\n%c\n%f\n%f\n");
 
     return 0;
 }
