@@ -1,10 +1,10 @@
 #include <stdio.h>
 struct Players{
     int age;
-    char[25] firstName;
-    char[25] lastName;
+    char firstName[25];
+    char lastName[25];
     float height;
-    char[25] position;
+    char position[25];
     int played;
     int scored;
 };
@@ -16,9 +16,9 @@ int main() {
 
     struct Players playerList[15];
     printf("Please enter their\nAge:\nFirst Name:\nLast Name:\nHeight:\nPosition:\nGames Played:\nGoals Scored:\nSeperated By Spaces.\n");
-    scanf("%d %c %c %f %c %f %f",playerList[pChoice].age,playerList[pChoice].firstName,playerList[pChoice].lastName,playerList[pChoice].height,playerList[pChoice].position,playerList[pChoice].played,playerList[pChoice].scored);
+    scanf("%d %s %s %f %s %d %d",&playerList[pChoice-1].age,&playerList[pChoice-1].firstName,&playerList[pChoice-1].lastName,&playerList[pChoice-1].height,&playerList[pChoice-1].position,&playerList[pChoice-1].played,&playerList[pChoice-1].scored);
 
-    printf("\n%d\n%c\n%c\n%f\n%c\n%f\n%f\n");
+    printf("\n%d\n%s\n%s\n%f\n%s\n%d\n%d\n",playerList[pChoice-1].age,playerList[pChoice-1].firstName,playerList[pChoice-1].lastName,playerList[pChoice-1].height,playerList[pChoice-1].position,playerList[pChoice-1].played,playerList[pChoice-1].scored );
 
     return 0;
 }
